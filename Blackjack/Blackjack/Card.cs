@@ -46,7 +46,14 @@ namespace Blackjack
 
         public string GetFace()
         {
-            return Rank + " of " + Suit;
+            return ("____________" +
+               "\n|" + Rank + "          |\n|           |\n|  " + Suit + "   |\n|           |\n|           |\n|" +
+               "__________" + Rank + "|");
+
+
+
+
+            //return Rank + " of " + Suit;
         }
 
     }
