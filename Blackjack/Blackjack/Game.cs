@@ -34,7 +34,7 @@ namespace Blackjack
             else
                 ComputerScore += card.GetValue();
 
-            Console.WriteLine("Computer drew {0}, and has {1} points now",
+            Console.WriteLine("{0}    Dealer has {1} points now",
                 card.GetFace(),
                 ComputerScore);
 
@@ -49,7 +49,7 @@ namespace Blackjack
             Card card = Deck.DrawCard();
             UserScore += card.GetValue();
 
-            Console.WriteLine("User drew {0}, and has {1} points now",
+            Console.WriteLine("{0}    You have {1} points now",
                 card.GetFace(),
                 UserScore);
 

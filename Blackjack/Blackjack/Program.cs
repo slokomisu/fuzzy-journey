@@ -18,12 +18,15 @@ namespace Blackjack
             Console.WriteLine(); // Blank line
             // Initial 2 draws by dealer
             game.ComputerMove();
+            Console.WriteLine();
             game.ComputerMove();
+            Console.WriteLine();
             // Checks if dealer won
             if (CheckIfPlayerOrComputerHasWon(game))
                 return;
             Console.WriteLine();
             game.UserMove();
+            Console.WriteLine();
             game.UserMove();
             if (CheckIfPlayerOrComputerHasWon(game))
                 return;
@@ -45,7 +48,7 @@ namespace Blackjack
                 }
                 else if (game.ComputerScore > game.UserScore)
                 {
-                    Console.WriteLine("Computer wins");
+                    Console.WriteLine("The house wins.");
                     return;
                  
                 }                
@@ -67,7 +70,7 @@ namespace Blackjack
         {
             if (game.ComputerWon)
             {
-                Console.WriteLine("Computer wins");
+                Console.WriteLine("The house wins.");
                 Console.ReadLine();
                 return true;
                 
